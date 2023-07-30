@@ -1,0 +1,259 @@
+import webbrowser
+from p import password
+
+while True:
+    print("\nCYBER SECURITY BY GEIST IT DEPARTMENT\n"
+          "OUR SERVICES : \n"
+          "1.USE A ADBLOCKER\n"
+          "2.USE A ANTIVIRUS\n"
+          "3.DO YOU FEEL HACKED?\n"
+          "4.RECOVER SOCIAL MEDIA ACOUNTS(FB/TWITTER)")
+
+    a = int(input("ENTER INPUT : "))
+    c = input("enter subscriber mail id : ")
+    if a == 1:
+        try:
+            from email.message import EmailMessage
+            import ssl       #SECURE SOCKET LAYER
+            import smtplib
+
+            email_sender = 'maheshreddy.pannalaa@gmail.com'
+            email_password = password
+            email_recever = c
+
+            subject = "uBlock Origin"
+            body = """ WHY uBlock?
+                        Out of the box, these lists of filters are loaded and enforced:
+
+    - uBlock Origin filter lists
+    - EasyList (ads)
+    - EasyPrivacy (tracking)
+    - Peter Lowe’s Ad server list (ads and tracking)
+    - Online Malicious URL Blocklist
+        *uBlock Origin is a general purpose blocker for web browsers that blocks ads, trackers, and malware sites by default. In this guide, you'll learn how to install uBlock Origin on Chrome and its derivatives (Opera, Chromium, Brave...)
+       HOW TO INSTALL:
+       1: Download uBlock Origin.
+       2: Add uBlock Origin to Chrome.
+       3: Notification of successful installation. ...
+       4: uBlock Origin pop-up interface. ...
+       5: uBlock Origin whitelist a domain.
+       """
+            em = EmailMessage()
+            em['From'] = email_sender
+            em['To'] = email_recever
+            em['subject'] = subject
+            em.set_content(body)
+
+            context = ssl.create_default_context()
+            with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smpt:
+                smpt.login(email_sender, email_password)
+                smpt.sendmail(email_sender, email_recever, em.as_string())
+            url = "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en"
+            webbrowser.open(url)
+        except Exception:
+            print("error")
+        finally:
+            print("THANK YOU:\n "
+                  "SEVICE BY:\n P.MAHESH REDDY \n C.BALA KRISHNA \n V.NAVEEN KUMAR \n R.SANJAY KUMAR \n ADITYA REDDY")
+    elif a == 2:
+        try:
+            from email.message import EmailMessage
+            import ssl
+            import smtplib
+
+            email_sender = 'maheshreddy.pannalaa@gmail.com'
+            email_password = password
+            email_recever = c
+
+            subject = "malwarebytes cyber security"
+            body = """why malwarebytes?
+
+            It has a decent antivirus scanner, real-time protection that offers multiple layers of protection against malware, system vulnerabilities, and online threats, and a browser extension that provides additional protection against phishing and malicious sites
+
+            HOW TO INSTALL:
+            1.On your Android device OR PC , open the Play Store OR CLICK LINK BELOW. ...
+            2.In the search bar, enter Malwarebytes, then tap. ...
+            3.Tap Install.
+            4.Tap Open after the installation is complete.
+            5.Tap Get started.
+            5.The first time the app launches, Malwarebytes requests security permissions on your device.
+            """
+            em = EmailMessage()
+            em['From'] = email_sender
+            em['To'] = email_recever
+            em['subject'] = subject
+            em.set_content(body)
+
+            context = ssl.create_default_context()
+            with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smpt:
+                smpt.login(email_sender, email_password)
+                smpt.sendmail(email_sender, email_recever, em.as_string())
+            url = "https://www.malwarebytes.com/"
+            webbrowser.open(url)
+        except Exception:
+            print("error")
+        finally:
+            print("THANK YOU:\n "
+                  "SEVICE BY:\n P.MAHESH REDDY \n C.BALA KRISHNA \n V.NAVEEN KUMAR \n R.SANJAY KUMAR \n ADITYA REDDY")
+    elif a == 3:
+        try:
+            from email.message import EmailMessage
+            import ssl
+            import smtplib
+
+            email_sender = 'maheshreddy.pannalaa@gmail.com'
+            email_password = password
+            email_recever = c
+
+            subject = "DID YOU FEEL LIKE HACKED?"
+            body = """ HERE ARE SOME TIPS...
+               IF you know you have been hacked, here’s what you should do..
+               You might have noticed that your passwords have changed or that you have received suspicious login alert emails from the online services you are using. If you are locked out of your online account and cannot recover it, you could be hacked. Here are some immediate steps you need to take if your online account has been hacked.
+
+               First thing first: Notify your Friends, Family Members, and Followers
+
+               Your friends and family members must be aware that one or more of your accounts have been hacked. The reasons are:
+               1.Most hackers hack for financial gain, and when they get access to your account, they will try to scam or blackmail you or attempt to scam your friends or followers of your hacked account. We have had multiple clients hacked by their own friends on, e.g., Facebook, as hackers already controlled their accounts. This is a continuous loop where the hacker keeps hacking friends of a hacked account and then repeats it. It’s called social engineering. Think about it, if you got a message from your dad, brother, or best friend, to send you a code from your phone, would you not do it?
+               2.The second reason is that the hacker might post sensitive or violating content on your own profile. If you are an employee or have important positions, this might get you in serious trouble.
+
+                         1.Never pay a ransom
+                                   If you have been hacked and the hackers have reached out to you demanding ransom, do not respond and definitely do not pay. By paying the hackers for their illegal activities, you are indirectly funding and supporting their operations, which means that they can continue hurting other people and businesses.
+
+                                   If hackers approach you and ask for a ransom, you should contact your local law enforcement and file a police report. You can also hire a third party who can talk to the hackers and not directly involve yourself.
+
+                                   What is important to know about most hackers is that they are in it for the money. The minute they understand you won’t give you any money, they will leave you alone and move onto their next victims. Most extortion attempts are shallow and won’t materialize.
+                         
+                         2.Suspicious Logins
+                                   Today, most online services will let you know if you have been logged into their services with a different computer, IP, or browser. If you do not recognize a login, you should take immediate action and secure your account by:
+                                   1.Changing the password
+                                   2.Adding 2FA (Two-Factor Authentication)
+                                   3.Adding additional security levels the service provides        
+                         
+                         3.Unable to log in to your services?
+                                   If the hackers have changed your password and/or email, and you are unable to log back into your own account, you should follow the service’s own protocol for hacked accounts. Often you can reset recent changes from the email alerts sent by the service. If that does not help, you should try to get in touch with the service’s customer support and see if they can help you.
+
+
+                              Follow our Hacked Protocol
+                If you are certain that you have been hacked, you should follow our protocol:
+                        
+                        1.Change passwords on all online accounts you still got access to and secure these as fast as possible.
+                        2.Ensure that you have secured your main email account, changed the password, implemented a recovery email, and enabled Two-Factor Authentication.
+                        3.Let all your friends and family members know that you have been hacked to ensure that they are not scammed by the hackers pretending to be you.
+                        4.Do an assessment of which accounts have been hacked and what information the hackers have received about you and your network.
+                        5.Do not create a new profile or account on the same platform you were hacked using the same credentials like email or phone number. This makes it much harder to recover your account.
+                USE LINK FOR MORE : https://hacked.com/how-to-check-if-youve-been-hacked/
+
+           """
+            em = EmailMessage()
+            em['From'] = email_sender
+            em['To'] = email_recever
+            em['subject'] = subject
+            em.set_content(body)
+
+            context = ssl.create_default_context()
+            with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smpt:
+                smpt.login(email_sender, email_password)
+                smpt.sendmail(email_sender, email_recever, em.as_string())
+            url = "https://hacked.com/how-to-check-if-youve-been-hacked/"
+            webbrowser.open(url)
+        except Exception:
+            print("error")
+        finally:
+            print("THANK YOU:\n "
+                  "SEVICE BY:\n P.MAHESH REDDY \n C.BALA KRISHNA \n V.NAVEEN KUMAR \n R.SANJAY KUMAR \n ADITYA REDDY")
+    if a == 4:
+        try:
+            from email.message import EmailMessage
+            import ssl
+            import smtplib
+
+            email_sender = 'maheshreddy.pannalaa@gmail.com'
+            email_password = password
+            email_recever = c
+
+            subject = "RECOVER THE SOCIAL MEDIA ACCOUNTS(Facebook & Twitter)"
+            body = """ How do I recover the social media accounts (Facebook & Twitter) of my company that I do not have the password/email credentials and the freelancer who does is unreachable?
+
+            1.TWITTER RECOVERY
+              1.CLICK THE LINK:-https://help.twitter.com/en/managing-your-account/cant-access-my-accounts-email-address
+              2.SELECT VIA EMAIL OR PHONE NUMBER
+              IF YOU  don't have access to the email address I used on my account and my mobile number is not verified
+
+              #Lost Twitter account:
+
+1. I cannot remember the username I used.
+Use your account email address and password to log into Twitter.
+If your password is not working, request a new password by entering your email address in our reset form.
+If our system cannot find your email address, you may be entering the wrong one. Keep reading.
+
+2. I cannot remember the email address I used on my account.
+Use your account's username and password to log into Twitter. 
+If that does not work, visit our password request form and enter the username or email address, or mobile phone number you think you used. Then, check all your email inboxes – we will send password reset instructions to the account's email address.
+
+3. I cannot remember the phone number I used on my account.
+If you are prompted to enter a mobile phone number when requesting a password reset, and cannot remember what phone number you used, enter your username or account email address.
+
+4. I think my account has been hacked!
+See our 'hacked' help page for the next steps, including a quick way to contact us for assistance
+              *Unfortunately, if you don't have access to the account's email address or verified mobile number, we are unable to continue troubleshooting. While we understand that it can be disappointing when you lose access to an account, we use these verification requirements to make sure we don't give out any user information to the wrong person.
+
+             2.FACEBOOK RECOVERY
+               IF YOUR ACCOUNT WAS HACKED AND DELITED
+
+See this article for information about how to recover access to your account.
+
+
+
+Lost Gmail account:
+
+If you forgot your password or username, or you can’t get verification codes, follow these steps to recover your Google Account. 
+
+1. Forgot your password
+
+Follow the steps to recover your Google Account or Gmail.
+You'll be asked some questions to confirm it's your account. Answer as best you can.
+If you have trouble, try the tips to complete account recovery steps.
+Reset your password when prompted. Choose a strong password that you haven't already used with this account. Learn how to create a strong password.
+
+2. Forgot the email address you use to sign in
+
+Follow the steps to find your username. You’ll need to know:
+A phone number or the recovery email address for the account
+The full name on your account
+Follow the instructions to confirm it’s your account.
+You’ll see a list of usernames that match your account.
+
+3. Someone else is using your account
+
+If you think someone is using your Google Account without your permission, follow the steps to recover a hacked or hijacked Google Account or Gmail.
+
+4. Can’t sign in for another reason
+
+If you have another problem, get help signing in.
+
+5. Recover a deleted Google Account
+
+If you recently deleted your Google Account, you can follow the steps to recover your account.
+
+
+       """
+            em = EmailMessage()
+            em['From'] = email_sender
+            em['To'] = email_recever
+            em['subject'] = subject
+            em.set_content(body)
+
+            context = ssl.create_default_context()
+            with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smpt:
+                smpt.login(email_sender, email_password)
+                smpt.sendmail(email_sender, email_recever, em.as_string())
+            url = "https://help.twitter.com/en/managing-your-account/cant-access-my-accounts-email-address"
+            webbrowser.open(url)
+        except Exception:
+            print("error")
+        finally:
+            print("THANK YOU:\n "
+                  "SEVICE BY:\n P.MAHESH REDDY \n C.BALA KRISHNA \n V.NAVEEN KUMAR \n R.SANJAY KUMAR \n ADITYA REDDY")
+    else:
+        print("#INVALID INPUT TRY AGAIN#\n"
+              "THANK TOU")
